@@ -4,10 +4,27 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
+function estraiInizialiNomi (array) {
 
+    let iniziali = [];
+    let elemento;
+    let lettera;
+    let j = 0;
+
+    for (let i = 0 ; i < array.length ; i++) {
+
+        elemento = array[i];        // Copio l'elemento corrente dell'array nella variabile elemento
+        lettera = elemento[0];      // Estraggo la prima lettera dalla stringa contenuta in elemento
+        iniziali.push(lettera);     // Aggiungo la lettera ricavata al nuovo array "iniziali"
+    }
+    
+    return iniziali;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
+console.log(estraiInizialiNomi(names));
 
+// console.log(estraiInizialiNomi(names));
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
