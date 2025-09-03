@@ -9,7 +9,6 @@ function estraiInizialiNomi (array) {
     let iniziali = [];
     let elemento;
     let lettera;
-    let j = 0;
 
     for (let i = 0 ; i < array.length ; i++) {
 
