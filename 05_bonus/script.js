@@ -13,7 +13,7 @@ function saluta(name) {
     const dataOggi = new Date();            // Restituisce un oggetto data con la data e l'ora correnti.
     const orario = dataOggi.getHours();     // Restituisce l'orario corrente, come numero (0-23), dell'oggetto "dataOggi"
     
-    if (orario >= 6 && orario <= 13) {      // Orario compreso nel range 6-13
+    if (orario >= 6 && orario <= 13) { 
         return "Buongiorno " + name;
     }
 
